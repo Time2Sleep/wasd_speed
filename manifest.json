@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "WASD Playback Speed",
+  "version": "1.1",
+  "description": "Добавляет в плеер WASD.tv ускорение 2.25х, 2.5х, 2.75х и 3х",
+  "icons": {
+    "128": "128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [ "https://wasd.tv/*" ],
+      "run_at": "document_idle",
+      "js": [ "app.js" ]
+    }
+  ]
+}
